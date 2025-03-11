@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --text-color: #a44b07;
+    --button-background: #de6730;
+    --button-text: #ffffff;
+}
+.SGUP_SEC{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.SGUP_H1{
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+}
+.GOOGLEBTN_SEC{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.GOOGLEBTN{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 13px;
+    width: 200px;
+    background-color: #4285F4;
+    color: var(--button-text);
+}
+.GOOGLEBTN span {
+    background-color: var(--button-text);
+}
+.FORMSECTION{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.FRM_DIV_FORM{
+    border: 3px solid var(--button-background);
+    border-radius: 10px;
+}
+.FRM_DIV_P1{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 10px;
+    justify-content: space-around;
+    align-items: center;   
+}
+.FRMDIV{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.FRMIP_DIV {
+    border: 2px solid var(--button-background);
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.FRMIP_ICONS{
+    background-color: var(--button-background);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+.FRMLBL{
+    margin: 5px 0px;
+    color: var(--text-color);
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.FRMIP{
+    width: 200px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    height: 30px;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 5px;
+}
+.FRM_BTN_DIV{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.FRM_BTN_DIV_DIV{
+    margin: 7px;
+}
+.LINK{
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+.SBMTBTN{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 13px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    color: var(--button-text);
+    background-color: var(--button-background);
+    cursor: pointer;
+}
+.FPBTN {
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 13px;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+}
+@media screen and (max-width: 307px) {
+    .FRMIP{
+        width: 170px;
+    }
+}

@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+  --text-color: #a44b07;
+  --button-background: #de6730;
+  --button-text: #ffffff;
+}
+.SEC_HEADER{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.HEADER_H1{
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    font-size: 24px;
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.FRM_SECTION {
+    margin: 10px 10px 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.FRM {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    border: 2px solid var(--button-background);
+    border-radius: 10px;
+    background-color: #efefef;
+    width: 900px;
+}
+.FRM > div:nth-child(1) {
+    grid-column: span 1/2;
+}
+.FRM > div:nth-child(2) {
+    grid-column: span 1/3;
+}
+.FRM > div:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: span 3;
+}
+.FRM > div:nth-child(4) {
+    grid-column: 2 / 3;
+}
+.FRM > div:nth-child(5) {
+    grid-column: 2 / 3;
+}
+.FRM > div:nth-child(6) {
+    grid-column: 2 / 3;
+}
+.FRM > div:nth-child(7) {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.FRM_DIV{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.LBL {
+    display: block;
+    font-weight: bold;
+    margin: 5px;
+}
+.IP, .TXTA {
+    margin: 0px 5px 5px 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    outline: none;
+    border: 2px solid var(--button-background);
+    background-color: white;
+    width: 95%;
+}
+.OPTION{
+    width: 100%;
+}
+.TXTA{resize: none;}
+.SBMT{
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    background-color: var(--button-background);
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.SBMT:hover {
+    border: 2px solid var(--text-color);
+    background-color: white;
+    color: var(--text-color);
+}
+.EXPENSEDATA_SECTION{
+    margin: 20px;
+}
+.EXPENSEDATA_HEADER{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.EXPENSEDATA_H1{
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    font-size: 24px;
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.EXPENSE_SEARCH_DIV{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.EXPENSE_SEARCH_IP{
+    border: 2px solid var(--button-background);
+    outline: none;
+    width: 230px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.EXPENSE_TTE_DIV {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.EXPENSETTE{
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    font-size: 16px;
+    color: var(--text-color);
+}
+.EXP_DTL_SEC{
+    border: 2px solid var(--text-color);
+    margin: 20px;
+    border-radius: 10px;
+    height: 300px;
+    overflow: scroll;
+}
+.expense-details{
+    border: 2px solid var(--button-background);
+    margin: 20px;
+    border-radius: 10px;
+}
+.expense-details summary {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--text-color);
+    height: 30px;
+    padding: 5px;
+}
+.expense-details .icon {
+    font-size: 18px;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+.expense-details .down-icon {
+    display: none;
+}
+.expense-details[open] .right-icon {
+    display: none;
+}
+.expense-details[open] .down-icon {
+    display: inline-block;
+}
+.EXPDTLP{
+    margin: 10px;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    font-size: 13px;
+}
+.EXPDTL_BTN {
+    width: 80px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    background-color: var(--button-background);
+    color: white;
+    font-size: 13px;
+    border-radius: 10px;
+}
+.EXPDTL_BTN:hover {
+    border: 2px solid var(--text-color);
+    background-color: white;
+    color: var(--text-color);
+    font-weight: 600;
+}
+.ERRORP{
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    margin: 20px;
+    font-size: 15px;
+    color: var(--text-color);
+}
+.PDF_SECTION{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+.PDFBTN{
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    background-color: var(--button-background);
+    color: white;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .FRM {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .FRM > div {
+        width: 100%;
+    }
+    .IP{
+        width: 97%;
+    }
+    .TXTA {
+        width: 96.6%;
+    }
+    .OPTION{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .IP{
+        width: 97%;
+    }
+    .TXTA {
+        width: 96.5%;
+    }
+    .OPTION{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .IP{
+        width: 95.5%;
+    }
+    .TXTA {
+        width: 95%;
+    }
+    .OPTION{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .IP{
+        width: 93.5%;
+    } 
+    .TXTA {
+        width: 93%;
+    }
+    .OPTION{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .IP{
+        width: 92.5%;
+    }
+    .TXTA {
+        width: 92%;
+    }
+    .OPTION{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .IP{
+        width: 90.5%;
+    }
+    .TXTA {
+        width: 90%;
+    }
+    .OPTION{
+        width: 100%;
+    }
+    .EXP_DTL_SEC{
+        margin: 5px;
+    }
+}

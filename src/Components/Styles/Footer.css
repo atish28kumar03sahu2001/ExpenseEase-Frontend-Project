@@ -1,0 +1,23 @@
+:root{
+    --text-color: #a44b07;
+    --button-background: #de6730;
+    --button-text: #ffffff;
+}
+.FTR_SEC{
+    margin-top: 100px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-background);
+}
+.FTR_P{
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    
+}

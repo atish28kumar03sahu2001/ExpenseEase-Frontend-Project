@@ -1,0 +1,43 @@
+:root{
+    --text-color: #a44b07;
+    --button-background: #de6730;
+    --button-text: #ffffff;
+}
+.ERROR_SEC{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.ERRH{
+    margin: 20px;
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+}
+.ERR_H1 {
+    font-size: 30px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+.ERR_H2 {
+    font-size: 26px;
+    color: var(--text-color);
+    font-weight: 300;
+}
+.ERR_BTN{
+    margin: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 13px;
+    color: var(--button-text);
+    background-color: var(--button-background);
+}
